@@ -1,0 +1,66 @@
+//Importacion de bootstrap
+@import "../scss/bootstrap/bootstrap.scss";
+//variable de color
+$colorPurpura: rgb(65, 2, 65);
+/**********************ALE*******************************
+/****************** Tipografias *********************/
+@font-face {
+    font-family: "IndieFlower-Regular";
+    src: url("/fonts/indieflower-regular.ttf");
+}
+
+@font-face {
+    font-family: "Pacifico-Regular";
+    src: url("/fonts/pacifico-regular.ttf");
+}
+
+@font-face {
+    font-family: "Shizuru-Regular";
+    src: url("/fonts/shizuru-regular.ttf");
+}
+
+@font-face {
+    font-family: "Roboto";
+    src: url("/fonts/roboto-regular.ttf");
+}
+
+/****************** FIN Tipografias *********************/
+/*************** ETIQUETAS *****************/
+body {
+    background-image: linear-gradient(315deg, #f6f0c4 0%, #d99ec9 100%);
+}
+
+/*************** FIN ETIQUETAS *****************/
+
+
+/*************** CLASES *****************/
+.aleTitulos {
+    text-align: center;
+    color: $colorPurpura;
+    font-family: 'Shizuru-Regular', serif;
+}
+
+.aleFooterHeader {
+    background-color: $colorPurpura;
+}
+
+/*************** FIN CLASES *****************/
+
+/*************** PSEUDOCLASES *************************/
+/* Hover */
+/* El usuario esta sobre el objeto */
+@media only screen and (min-width: 992px) {
+    nav div a:hover {
+        background-color: orangered;
+    }
+}
+
+/*************** PSEUDOCLASES *************************/
+
+/*************** PSEUDOELEMENTOS *************************/
+/****** Cuando el usuario seleciona texto para copy/paste le cambio colores *********/
+::selection {
+    color: gold;
+    background-color: red;
+}
+/*************** FIN PSEUDOELEMENTOS *************************/
