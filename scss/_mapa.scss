@@ -1,0 +1,59 @@
+//variable de color
+$colorPurpura: rgb(65, 2, 65);
+
+//****** Mapa, mixin y extend
+//***MAPA
+/*Clase para pagina de contactos*/
+$aleMapaContactoDatos: (
+    Nombre: 1rem,
+    Apellido: .8rem,
+    Correo: .7rem,
+    comentarios: .6rem
+)
+;
+
+@each $atributo,$valor in $aleMapaContactoDatos {
+    .tituloContacto-#{$atributo} {
+        font-size: $valor;
+    }
+}
+/*FIN Clase para pagina de contactos*/
+
+//****** utilización de extend
+/*Clase para botones de contactos*/
+.btnContactoBorrar{
+    width: 100px;
+    height: 25px;
+    background-color:$colorPurpura;
+    text-align: center;
+    color: white;
+    border-radius: 50px;
+    border: 1px solid magenta;
+}
+
+.btnContactoEnviar{
+    @extend .btnContactoBorrar;
+    width: 200px;
+}
+/*FIN Clase para botones de contactos*/
+
+//****** utilización de mixin
+/*Clase para font*/
+@mixin familiaTexto ($familia,$direccion){
+font-family: $familia;
+src: $direccion;
+}
+
+.familiaIndie {
+    @include familiaTexto("IndieFlower-Regular","/fonts/indieflower-regular.ttf" )
+}
+.familiaPacifico {
+    @include familiaTexto("pacifico-regular","/fonts/pacifico-regular.ttf" )
+}
+.familiaShizuru {
+    @include familiaTexto("Shizuru-Regular","/fonts/Shizuru-Regular.ttf" )
+}
+.familiaRoboto {
+    @include familiaTexto("Roboto","/fonts/Roboto.ttf" )
+}
+/*FIN Clase para font*/

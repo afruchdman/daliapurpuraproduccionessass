@@ -11118,6 +11118,62 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+/*Clase para pagina de contactos*/
+.tituloContacto-Nombre {
+  font-size: 1rem;
+}
+
+.tituloContacto-Apellido {
+  font-size: 0.8rem;
+}
+
+.tituloContacto-Correo {
+  font-size: 0.7rem;
+}
+
+.tituloContacto-comentarios {
+  font-size: 0.6rem;
+}
+
+/*FIN Clase para pagina de contactos*/
+/*Clase para botones de contactos*/
+.btnContactoBorrar, .btnContactoEnviar {
+  width: 100px;
+  height: 25px;
+  background-color: #410241;
+  text-align: center;
+  color: white;
+  border-radius: 50px;
+  border: 1px solid magenta;
+}
+
+.btnContactoEnviar {
+  width: 200px;
+}
+
+/*FIN Clase para botones de contactos*/
+/*Clase para font*/
+.familiaIndie {
+  font-family: "IndieFlower-Regular";
+  src: "/fonts/indieflower-regular.ttf";
+}
+
+.familiaPacifico {
+  font-family: "pacifico-regular";
+  src: "/fonts/pacifico-regular.ttf";
+}
+
+.familiaShizuru {
+  font-family: "Shizuru-Regular";
+  src: "/fonts/Shizuru-Regular.ttf";
+}
+
+.familiaRoboto {
+  font-family: "Roboto";
+  src: "/fonts/Roboto.ttf";
+}
+
+/*FIN Clase para font*/
 /**********************ALE*******************************
 /****************** Tipografias *********************/
 @font-face {
